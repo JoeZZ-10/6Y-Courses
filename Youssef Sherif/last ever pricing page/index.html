@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Web</title>
+   
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+     <!--@ Start Header -->
+     <nav class="navigationWrapper">
+        <div class="logoWrapper">
+          <img class="logo" src="" alt="logo" title="6Y Courses" /> <!--@ Logo Src -->
+        </div>
+        <ul class="navigation">
+          <li class="parent"><a class="link" href="#">Home</a></li>
+          <li class="parent"><a class="link" href="#">About</a></li>
+          <li class="parent" id="clients">
+            <a class="link" href="#"
+              >Categories<i class="fas fa-sort-down down-arrow"></i
+            ></a>
+          </li>
+          <li class="parent" id="services">
+            <a class="link" href="#"
+              >New<i class="fas fa-sort-down down-arrow"></i
+            ></a>
+          </li>
+          <li class="parent"><a class="link" href="#">Contact</a></li>
+        </ul>
+  
+        <!-- Search Section -->
+        <div class="search">
+          <input type="text" class="searchTerm" placeholder="Search here..." />
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+  
+        <!-- SignIn\Up Section -->
+        <div>
+          <a
+            class="signup-btn btn"
+            href="#"
+            title="Sign Up to Improve Your Learning Experience"
+            >Sign Up</a
+          >
+          <a class="login-btn btn" href="#" title="Login to your account"
+            >Log in</a
+          >
+        </div>
+      </nav>
+      <!--@ End Header -->
+
+<div class="containe">
+
+    <div class="price-toggler">
+        <span class="month active">monthly</span>
+        <span class="year">yearly</span>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>basic</h3>
+            <div class="price month"><span>$</span>10.<span>00</span></div>
+            <div class="price year"><span>$</span>30.<span>00</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> 1 person </p>
+                <p> <i class="fas fa-check"></i> 10GB storage </p>
+                <p> <i class="fas fa-check"></i> 1 domain </p>
+                <p> <i class="fas fa-check"></i> team support </p>
+                <p> <i class="fas fa-check"></i> maintenance </p>
+            </div>
+            <a href="#" class="btn">choose plan</a>
+        </div>
+
+        <div class="box">
+            <h3>regular</h3>
+            <div class="price month"><span>$</span>30.<span>00</span></div>
+            <div class="price year"><span>$</span>50.<span>00</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> 10 person </p>
+                <p> <i class="fas fa-check"></i> 50GB storage </p>
+                <p> <i class="fas fa-check"></i> 10 domain </p>
+                <p> <i class="fas fa-check"></i> team support </p>
+                <p> <i class="fas fa-check"></i> maintenance </p>
+            </div>
+            <a href="#" class="btn">choose plan</a>
+        </div>
+
+        <div class="box">
+            <h3>business</h3>
+            <div class="price month"><span>$</span>90.<span>00</span></div>
+            <div class="price year"><span>$</span>150.<span>00</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> 100 person </p>
+                <p> <i class="fas fa-check"></i> 100GB storage </p>
+                <p> <i class="fas fa-check"></i> 100 domain </p>
+                <p> <i class="fas fa-check"></i> team support </p>
+                <p> <i class="fas fa-check"></i> maintenance </p>
+            </div>
+            <a href="#" class="btn">choose plan</a>
+        </div>
+
+    </div>
+
+</div>
+ <!--@ Start Footer -->
+ <div class="footer">
+    <div class="container">
+      <div class="box">
+        <h3>Y6 Courses</h3>
+        <ul class="social">
+          <li>
+            <a href="#" class="facebook">
+              <i class="bx bxl-facebook-square social-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="twitter">
+              <i class="bx bxl-twitter social-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="youtube">
+              <i class="bx bxl-youtube social-icon"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text">
+          Create an online video course, reach students across the globe, and
+          earn money.
+        </p>
+      </div>
+      <div class="box">
+        <div class="line">
+          <div class="info">
+            Egypt, Giza, Inside The Sphinx, Room Number 220
+          </div>
+        </div>
+        <div class="line">
+          <div class="info">Business Hours: From 10:00 To 18:00</div>
+        </div>
+        <div class="line">
+          <div class="info">
+            <span><b>Call Us:</b></span>
+            <span>+20123456789</span>
+            <span>+20198765432</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">Made With &lt;3 By 6Y</p>
+  </div>
+  <!--@ End Footer -->
+
+<script>
+
+let month = document.querySelector('.price-toggler .month');
+let year = document.querySelector('.price-toggler .year');
+let monthAmount = document.querySelectorAll('.box-container .box .month');
+let yearAmount = document.querySelectorAll('.box-container .box .year');
+
+year.onclick = () =>{
+    year.classList.add('active');
+    month.classList.remove('active');
+
+    monthAmount.forEach(mo =>{ mo.style.display = 'none' });
+    yearAmount.forEach(yr =>{ yr.style.display = 'block' });
+};
+
+month.onclick = () =>{
+    year.classList.remove('active');
+    month.classList.add('active');
+
+    monthAmount.forEach(mo =>{ mo.style.display = 'block' });
+    yearAmount.forEach(yr =>{ yr.style.display = 'none' });
+};
+
+</script>
+    
+</body>
+</html>
